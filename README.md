@@ -45,7 +45,7 @@ graph TD
     D0[Preprocessing]
     D1[Convert Longitudinal Data<br/>to Patient-Level Endpoint Data]
     D2[Use Last Available Visit<br/>as Endpoint]
-    D3[Baseline Severity Cut-off<br/>BASVAL ≥ 14]
+    D3[Baseline Severity Cut-off<br/>BASVAL >= 14]
     D4[Primary Analysis Sample<br/>N = 136<br/>70 DRUG / 66 PLACEBO]
 
     C1 --> D0
@@ -153,8 +153,6 @@ graph TD
     %% =====================
     %% Styling
     %% =====================
-
-    %% Dark node style, close to the example
     classDef dark fill:#2B2B2B,color:#FFFFFF,stroke:#111111,stroke-width:1px
     classDef result fill:#2B2B2B,color:#FFFFFF,stroke:#FFD600,stroke-width:2px
     classDef warning fill:#2B2B2B,color:#FFFFFF,stroke:#FF6D00,stroke-width:2px
@@ -169,15 +167,4 @@ graph TD
     class I0,I1,I2,I3,I4 dark
     class G5,G6,H4,I5,J0,J1,J2 result
     class J3 warning
-
-    %% Section-like coloring through subgraph backgrounds is not always supported
-    %% in every Mermaid renderer, so node colors are kept consistent.
-    %% Suggested section colors:
-    %% Scientific Background: #FFD600
-    %% Data and Preprocessing: #FFB300
-    %% Adjustment Model: #FF6D00
-    %% FMM Branch: #E65100
-    %% Quantile Regression Branch: #FFF9C4
-    %% Sensitivity Analysis: #FFE0B2
-    %% Final Conclusion: #FFD600
-` ` `
+```
